@@ -1,0 +1,121 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 125px;
+}
+
+.food-search {
+  width: 250px;
+  height: 35px;
+  border-radius: 15px;
+  border: 1px solid #79c5c0;
+  margin-left: 20px;
+  padding-inline-start: 30px;
+  color: #79c5c0;
+}
+
+.food-search::placeholder {
+  color: #79c5c0;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-btn {
+  position: absolute;
+  left: 30px;
+  top: 9px;
+  background: none;
+  border: none;
+  color: #79c5c0;
+  font-size: medium;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+}
+
+.nav-elements {
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  display: flex;
+}
+
+.bar {
+  border-left: 0.5px solid#79c5c0;
+  height: 75%;
+}
+
+.cart,
+.location,
+.user {
+  color: #79c5c0;
+}
+
+.nav-elements li {
+  list-style: none;
+  color: #79c5c0;
+  font-weight: bold;
+}
+
+.underline {
+  margin-left: 125px;
+  border-top: 0.1px solid rgb(222, 222, 222, 0.3);
+}
+
+.logo {
+  position: absolute;
+  padding-left: 15px;
+  top: 5%;
+}
+
+.sidenav {
+  margin-top: 100px;
+  position: fixed;
+}
+
+.menu {
+  margin-top: 3px;
+  width: 125px;
+  height: 100px;
+  transform: skewY(-10deg);
+  background: #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+.menu h3 {
+  text-align: center;
+}
+
+.our-menu {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.underline-2 {
+  border-top: 8px solid #79c5c0;
+  display: flex;
+  margin-top: -1.1%;
+  width: 17%;
+  margin-left: 41.5%;
+}
