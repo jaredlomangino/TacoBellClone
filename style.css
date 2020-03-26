@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
 }
 
 .navbar {
@@ -110,6 +113,7 @@
   display: flex;
   justify-content: center;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .underline-2 {
@@ -118,4 +122,100 @@
   margin-top: -1.1%;
   width: 17%;
   margin-left: 41.5%;
+}
+
+.menu-grid {
+  margin-top: 50px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+  display: flex;
+  justify-content: center;
+}
+
+.new,
+.favorites,
+.combos,
+.specialties {
+  width: 215px;
+  height: 160px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#722182, #8e297a);
+}
+
+.tacos,
+.burritos,
+.quesadillas,
+.nachos {
+  width: 215px;
+  height: 160px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  background-image: linear-gradient(#8e297a, #ab3171);
+}
+
+.value-menu,
+.sweets,
+.sides,
+.drinks {
+  width: 215px;
+  height: 160px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  background-image: linear-gradient(#ab3171, #c93a68);
+}
+
+.power-menu,
+.party-packs,
+.vegetarian,
+.breakfast {
+  width: 215px;
+  height: 160px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  background-image: linear-gradient(#c93a68, #e6425f);
+}
+
+.new,
+.favorites,
+.combos,
+.specialties,
+.tacos,
+.burritos,
+.quesadillas,
+.nachos,
+.value-menu,
+.sweets,
+.sides,
+.drinks,
+.power-menu,
+.party-packs,
+.vegetarian,
+.breakfast:hover {
+  cursor: pointer;
+}
+
+.favorites:hover {
+  transform: scale(1.1);
+}
+
+.menu-icon {
+  color: white;
+  font-size: 60px;
+  transition: 0.4s ease-in-out;
+}
+
+.menu-item {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
 }
