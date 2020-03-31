@@ -248,9 +248,91 @@ a:hover {
   margin: auto;
 }
 
+.crave-text {
+  padding-top: 130px;
+}
+
+.crave-text p {
+  width: 46.5%;
+  margin: auto;
+  display: flex;
+  justify-content: start;
+}
+
+.cravings {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .craving {
   display: flex;
-  border-radius: 2px solid;
+  border: 2px solid;
   border-color: #79c5c0;
   width: 275px;
+  margin-right: 20px;
+}
+
+.craving p {
+  color: #79c5c0;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.not-sure {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.not-sure-options {
+  display: flex;
+  flex-direction: column;
+  width: 185px;
+  margin-right: 30px;
+}
+
+.not-sure-options img {
+  height: 155px;
+  width: 185px;
+  margin-bottom: 10px;
+}
+
+.not-sure-options h3,
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.not-sure-options h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.not-sure-options p {
+  color: grey;
+  font-size: 15px;
+}
+
+.not-sure-btn {
+  border: 2px solid;
+  border-color: #79c5c0;
+  background: none;
+  height: 40px;
+  color: #79c5c0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.not-sure-btn:hover {
+  cursor: pointer;
+  background: #79c5c0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
 }
