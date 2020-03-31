@@ -7,6 +7,30 @@
   font-family: "Varela Round", sans-serif;
 }
 
+.corona-virus {
+  background: #eaaa00;
+  height: 55px;
+}
+
+.corona-text {
+  padding-top: 8px;
+}
+
+.corona-text a {
+  color: #fff;
+  padding-left: 35px;
+  font-size: 14px;
+}
+
+.corona-text p {
+  justify-content: start;
+  margin-bottom: 0px;
+  padding-left: 35px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
 .navbar {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -80,7 +104,7 @@
   position: absolute;
   position: fixed;
   padding-left: 15px;
-  top: 5%;
+  top: 10%;
 }
 
 .sidenav {
