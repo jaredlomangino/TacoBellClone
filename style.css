@@ -78,6 +78,7 @@
 
 .logo {
   position: absolute;
+  position: fixed;
   padding-left: 15px;
   top: 5%;
 }
@@ -136,10 +137,7 @@
   justify-content: center;
 }
 
-.new,
-.favorites,
-.combos,
-.specialties {
+.row1 div {
   width: 215px;
   height: 160px;
   margin-right: 3px;
@@ -151,71 +149,108 @@
   background-image: linear-gradient(#722182, #8e297a);
 }
 
-.tacos,
-.burritos,
-.quesadillas,
-.nachos {
+.row2 div {
   width: 215px;
   height: 160px;
   margin-right: 3px;
   margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(#8e297a, #ab3171);
 }
 
-.value-menu,
-.sweets,
-.sides,
-.drinks {
+.row3 div {
   width: 215px;
   height: 160px;
   margin-right: 3px;
   margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(#ab3171, #c93a68);
 }
 
-.power-menu,
-.party-packs,
-.vegetarian,
-.breakfast {
+.row4 div {
   width: 215px;
   height: 160px;
   margin-right: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(#c93a68, #e6425f);
 }
 
-.new,
-.favorites,
-.combos,
-.specialties,
-.tacos,
-.burritos,
-.quesadillas,
-.nachos,
-.value-menu,
-.sweets,
-.sides,
-.drinks,
-.power-menu,
-.party-packs,
-.vegetarian,
-.breakfast:hover {
+.menu-square:hover {
   cursor: pointer;
 }
 
-.favorites:hover {
+.menu-square:hover > i,
+.menu-square:hover > p {
   transform: scale(1.1);
 }
 
-.menu-icon {
+.fa-heart {
   color: white;
   font-size: 60px;
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
+  padding-bottom: 10px;
 }
 
 .menu-item {
   color: white;
   font-size: 25px;
   font-weight: bold;
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #e6425f;
+  font-weight: bold;
+  width: 8%;
+  margin: auto;
+}
+
+a:hover {
+  color: #79c5c0;
+}
+
+.underline-3 {
+  border-top: 8px solid #79c5c0;
+  display: flex;
+  margin-top: -1%;
+  width: 22%;
+  margin-left: 39%;
+}
+
+.paragraphs h2 {
+  font-size: 25px;
+  display: flex;
+  justify-content: left;
+  padding: 50px 0 50px 0;
+  margin-top: 50px;
+  width: 40%;
+  margin: auto;
+}
+
+.paragraphs p {
+  display: flex;
+  justify-content: left;
+  padding-bottom: 50px;
+  width: 40%;
+  margin: auto;
+}
+
+.craving {
+  display: flex;
+  border-radius: 2px solid;
+  border-color: #79c5c0;
+  width: 275px;
 }
