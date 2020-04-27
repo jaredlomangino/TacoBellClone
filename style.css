@@ -139,29 +139,23 @@
   justify-content: center;
   font-size: 30px;
   font-weight: bold;
-}
-
-.underline-2 {
-  border-top: 8px solid #79c5c0;
-  display: flex;
-  margin-top: -1.1%;
-  width: 17%;
-  margin-left: 41.5%;
+  text-decoration: underline;
+  text-decoration-color: #79c5c0;
 }
 
 .menu-grid {
-  margin-top: 50px;
+  margin: 30px 0px 20px 0px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 0fr);
 }
 
-.row1,
-.row2,
-.row3,
-.row4 {
+#row1,
+#row2,
+#row3,
+#row4 {
   display: flex;
   justify-content: center;
-}
-
-.row1 div {
   width: 215px;
   height: 160px;
   margin-right: 3px;
@@ -170,42 +164,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#row1 {
   background-image: linear-gradient(#722182, #8e297a);
 }
 
-.row2 div {
-  width: 215px;
-  height: 160px;
-  margin-right: 3px;
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#row2 {
   background-image: linear-gradient(#8e297a, #ab3171);
 }
 
-.row3 div {
-  width: 215px;
-  height: 160px;
-  margin-right: 3px;
-  margin-bottom: 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#row3 {
   background-image: linear-gradient(#ab3171, #c93a68);
 }
 
-.row4 div {
-  width: 215px;
-  height: 160px;
-  margin-right: 3px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#row4 {
   background-image: linear-gradient(#c93a68, #e6425f);
 }
 
@@ -227,59 +200,55 @@
 
 .nutrition-info a {
   display: flex;
-  justify-content: center;
+  margin: auto;
   text-decoration: none;
   color: #e6425f;
   font-weight: bold;
   width: 8%;
-  margin: auto;
 }
 
 .nutrition-info a:hover {
   color: #79c5c0;
 }
 
-.underline-3 {
-  border-top: 8px solid #79c5c0;
+.paragraphs {
   display: flex;
-  margin-top: -1%;
-  width: 22%;
-  margin-left: 39%;
+  flex-direction: column;
+  text-align: center;
 }
 
 .paragraphs h2 {
   font-size: 25px;
-  display: flex;
-  justify-content: left;
   padding: 50px 0 50px 0;
   margin-top: 50px;
-  width: 40%;
+  width: 50%;
   margin: auto;
 }
 
 .paragraphs p {
-  display: flex;
-  justify-content: left;
+  display: block;
   padding-bottom: 50px;
-  width: 40%;
+  width: 50%;
   margin: auto;
-}
-
-.crave-text {
-  padding-top: 130px;
-}
-
-.crave-text p {
-  width: 46.5%;
-  margin: auto;
-  display: flex;
-  justify-content: start;
 }
 
 .cravings {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.crave-text {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.crave-text p {
+  display: inline-block;
+  text-align: left;
 }
 
 .craving {
@@ -294,15 +263,27 @@
   color: #79c5c0;
   font-size: 20px;
   font-weight: bold;
-  display: flex;
   align-items: center;
   padding-left: 20px;
 }
 
 .not-sure {
   padding-top: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 0fr);
   justify-content: center;
+}
+
+.not-sure-text {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.not-sure-text p {
+  display: inline-block;
+  text-align: left;
 }
 
 .not-sure-options {
@@ -443,4 +424,105 @@ p {
   height: 80px;
   transition: 0.2s ease-in-out;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidenav,
+  .logo {
+    left: -300px;
+  }
+
+  .nutrition-info a {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 0fr);
+  }
+
+  #row1,
+  #row2,
+  #row3,
+  #row4 {
+    width: 300px;
+    height: 200px;
+  }
+
+  .nutrition-info a {
+    width: 20%;
+  }
+
+  .cravings {
+    grid-template-columns: repeat(1, 0fr);
+  }
+
+  .crave-text {
+    grid-column-end: 2;
+  }
+
+  .craving {
+    margin-top: 30px;
+    width: 400px;
+  }
+
+  .craving p {
+    padding-left: 100px;
+  }
+
+  .not-sure {
+    grid-template-columns: repeat(2, 0fr);
+  }
+
+  .not-sure-text {
+    grid-column-end: 3;
+  }
+
+  .not-sure-options {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    margin-left: 0px;
+  }
+  .nutrition-info a {
+    width: 25%;
+  }
+
+  .footer-links a,
+  .policy-links a {
+    font-size: 12px;
+  }
+
+  .paragraphs h2,
+  .paragraphs p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nutrition-info a {
+    width: 30%;
+  }
+
+  .food-search {
+    width: 125px;
+  }
+
+  #row1,
+  #row2,
+  #row3,
+  #row4 {
+    width: 220px;
+    height: 200px;
+  }
+
+  .footer-links a,
+  .policy-links a {
+    margin: auto;
+    margin-right: 5px;
+  }
 }
